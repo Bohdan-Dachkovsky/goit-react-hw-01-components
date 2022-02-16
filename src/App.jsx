@@ -13,6 +13,7 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -20,7 +21,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-     <Profile user={user.id} tag={user.tag} location={user.location} avatar={user.avatar} /> 
+     <Profile user={user.username} tag={user.tag} location={user.location} avatar={user.avatar} stats={user.stats}/> 
      <Statistics id={data.id} status={data.id} friends={data.id} description={data.id} name={data.id}/> 
    
     </div>

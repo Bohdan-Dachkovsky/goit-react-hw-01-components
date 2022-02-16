@@ -1,5 +1,5 @@
 import '../files.css/styles.css';
-
+// import PropTypes from 'prop-types';
 const FriendList = ({id, status, friends, description, name}) =>  {
     return (
 <div>
@@ -15,3 +15,4 @@ export default FriendList;
 // FriendList.PropTypes = {
 //   id:PropTypes.number, status:PropTypes.boolean, friends:PropTypes.string, description:PropTypes.string, name:PropTypes.string
 // }
+
