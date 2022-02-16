@@ -1,0 +1,114 @@
+/* @import-normalize; bring in normalize.css styles */
+html, body {
+  padding: 0;
+  margin: 0;
+}
+section {
+  min-width: 700px;
+  height: 350px;
+  display: block;
+  border: dashed 1px; 
+  margin: 1em; 
+  font-weight: bold; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(245, 245, 245);
+ }
+
+ section .item {
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  height: auto;
+  flex-basis: calc((100%/4));
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+ }
+ h2 {
+   background-color: white;
+   text-align: center;
+   border-bottom: 3px dashed;
+   margin: 0px;
+   padding: 0px;
+ }
+ 
+ li {
+  display: block;
+}
+
+.stat-list  {
+  display: flex;
+  position: relative;
+  background-color: yellow;
+  list-style-type: none;
+  margin-block-start: 2.9em;
+  margin-block-end: 0em;
+  margin-inline-start: 20px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+ .stat-list li{
+   margin-right: 0em;
+   position: absolute;
+
+ }
+ .stat-list li:nth-child(1) {
+  top: 0%; left: 15%; transform: translate(-50%, -50%);
+  background-color: paleturquoise;
+  height: 100px;
+ }
+ .stat-list li:nth-child(2) {
+  top: 0%; left: 38%; transform: translate(-50%, -50%);
+  background-color: pink;
+  height: 100px;
+}
+.stat-list li:nth-child(3) {
+  top: 0%; left: 61%; transform: translate(-50%, -50%);
+  background-color: greenyellow;
+  height: 100px;
+}
+.stat-list li:nth-child(4) {
+  top: 0%; left: 84%; transform: translate(-50%, -50%);
+  background-color: lightblue;
+  height: 100px;
+}
+ .stat-list .item{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 20%;
+  margin: 0px;
+  padding: 0px;
+  justify-content: flex-start;
+ }
+div .stat-list .item > span {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+ }
+ .label {
+   position: relative;
+   margin: 0px;
+   padding: 0px;
+   margin-left: 15px;
+ }
+ .percentage {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  top: 75%; left: 35%; transform: translate(-50%, -50%);
+  margin-left: 25px;
+ }
+ .item .label:nth-of-type(2) {
+   padding-left: 30px;
+ }
+
+ div > section > h2 {
+  margin: 20px 0px;
+ }
+ /* .item:nth-child(-n+2) {
+   display: flex;
+ } */
