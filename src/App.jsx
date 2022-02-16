@@ -3,6 +3,10 @@ import { useReducer } from "react";
 import Profile from "./components/Profile";
 import Statistics from "./components/Statistic";
 // import TransactionHistory from "./components/TransactionHistory";
+import user from "./data/user.json";
+import data from "./data/data.json";
+// import friend from ".data/friend.json";
+// import transaction from ".data/transaction.json";
 export const App = () => {
   return (
     <div
@@ -17,7 +21,7 @@ export const App = () => {
       }}
     >
      <Profile user={user.id} tag={user.tag} location={user.location} avatar={user.avatar} /> 
-     <Statistics id={user.id} status={user.id} friends={user.id} description={user.id} name={user.id}/> 
+     <Statistics id={data.id} status={data.id} friends={data.id} description={data.id} name={data.id}/> 
    
     </div>
   );
