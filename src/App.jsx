@@ -2,9 +2,14 @@ import { useReducer } from "react";
 // import FriendList from "./components/FriendList";
 import Profile from "./components/Profile";
 import Statistics from "./components/Statistic";
-// import TransactionHistory from "./components/TransactionHistory";
+import TransactionHistory from "./components/TransactionHistory";
 import user from "./data/user.json";
 import data from "./data/data.json";
+import friends from "./data/user.json";
+import transactions from "./data/user.json";
+import { number } from "prop-types";
+
+
 // import friend from ".data/friend.json";
 // import transaction from ".data/transaction.json";
 export const App = () => {
@@ -21,9 +26,10 @@ export const App = () => {
         color: '#010101',
       }}
     >
-     <Profile user={user.username} tag={user.tag} location={user.location} avatar={user.avatar} stats={user.stats}/> 
-     <Statistics id={data.id} status={data.id} friends={data.id} description={data.id} name={data.id}/> 
-   
+     <Profile user={user.username} tag={user.tag} location={user.location} avatar={user.avatar} stats={user.stats}/>
+     {/* {data.map(header => <li key={header.id}> <Statistics title="Upload stats" stats={header.data}/></li>)} */}
+     {friends.map(index => <FriendList friends={index.friends} />)}
+     {transactions.map(number => <TransactionHistory items={number.transactions}  />)}
     </div>
   );
 };
