@@ -1,4 +1,4 @@
-// import '../files.css/section.css';
+// import '../files.css/section.module.css';
 // import PropTypes from "prop-types";
 // const Statistics = ({title, stats}) =>  {
 //     return (

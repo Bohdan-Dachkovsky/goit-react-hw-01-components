@@ -1,4 +1,4 @@
-import '../files.css/bankservices.css';
+import '../files.css/bankservices.module.css';
 import PropTypes from "prop-types";
 const TransactionHistory = ({items}) =>  {
     return (
