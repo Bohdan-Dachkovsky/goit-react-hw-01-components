@@ -1,10 +1,11 @@
 // import { useReducer } from "react";
 import FriendList from "./components/FriendList/FriendList";
+import FriendListItem from "./components/FriendList/FriendListItem";
 import Profile from "./components/Profile";
-// import Statistics from "./components/Statistic";
-// import TransactionHistory from "./components/TransactionHistory";
+import Statistics from "./components/Statistic/Statistic";
+// import TransactionHistory from "./components/TransictionHistory/TransactionHistory";
 import user from "./data/user.json";
-// import data from "./data/data.json";
+import data from "./data/data.json";
 import friends from "./data/user.json";
 // import transactions from "./data/user.json";
 // import { number } from "prop-types";
@@ -12,7 +13,7 @@ import friends from "./data/user.json";
 
 // import friend from ".data/friend.json";
 // import transaction from ".data/transaction.json";
-export const App = () => {
+ const App = () => {
   return (
     <div
       style={{
@@ -27,8 +28,11 @@ export const App = () => {
       }}
     >
      <Profile user={user.username} tag={user.tag} location={user.location} avatar={user.avatar} stats={user.stats}/>
-     {/* {data.map(header => <li key={header.id}> <Statistics title="Upload stats" stats={header.data}/></li>)} */}
+     <Statistics title="Upload stats" stats={data} />
+     {/*  Statistics({title: "Upload stats", stats: data}) */}
+     <Statistics stats={data} />
       <FriendList  friends={friends}/> 
+      <FriendListItem/>
      {/* {transactions.map(number => <TransactionHistory items={number.transactions}  />)} */}
     </div>
   );
@@ -37,5 +41,4 @@ export const App = () => {
 
 // {/* <TransactionHistory/>  */}
 
-{/* <Statistics title="Upload stats" stats={data} />
-<Statistics stats={data} /> */}
+export default App;

@@ -9,6 +9,15 @@ height: 150px;
 margin-bottom: 50px
 
 };
+.friend-list {
+margin: 0px;
+padding: 0px;
+list-style: none;
+background-color: white;
+width: 600px;
+height: auto;
+margin-bottom: 50px
+}
 .status {
 margin: 0px;
 padding: 0px;
