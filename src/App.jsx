@@ -1,9 +1,9 @@
 // import { useReducer } from "react";
 import FriendList from "./components/FriendList/FriendList";
-import FriendListItem from "./components/FriendList/FriendListItem";
+
 import Profile from "./components/Profile";
 import Statistics from "./components/Statistic/Statistic";
-// import TransactionHistory from "./components/TransictionHistory/TransactionHistory";
+import TransactionHistory from "./components/TransictionHistory/TransactionHistory";
 import user from "./data/user.json";
 import data from "./data/data.json";
 import friends from "./data/user.json";
@@ -12,7 +12,7 @@ import friends from "./data/user.json";
 
 
 // import friend from ".data/friend.json";
-// import transaction from ".data/transaction.json";
+import transaction from ".data/transaction.json";
  const App = () => {
   return (
     <div
@@ -28,12 +28,11 @@ import friends from "./data/user.json";
       }}
     >
      <Profile user={user.username} tag={user.tag} location={user.location} avatar={user.avatar} stats={user.stats}/>
-     <Statistics title="Upload stats" stats={data} />
+     <Statistics  stats={data} />
      {/*  Statistics({title: "Upload stats", stats: data}) */}
-     <Statistics stats={data} />
       <FriendList  friends={friends}/> 
-      <FriendListItem/>
-     {/* {transactions.map(number => <TransactionHistory items={number.transactions}  />)} */}
+   
+      <TransactionHistory items={transaction}  />
     </div>
   );
 };

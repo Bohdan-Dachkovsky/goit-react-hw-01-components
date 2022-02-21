@@ -1,50 +1,36 @@
-// import '../files.css/bankservices.module.css';
-// import PropTypes from "prop-types";
-// const TransactionHistory = ({items}) =>  {
-//     return (
-// <div>
-// <table className="transaction-history">
-//   <thead>
-//     <tr>
-//     <th>Type</th>
-//     <th>Amount</th>
-//     <th>Currency</th>
-//     </tr>
-//   </thead>
-//   <tbody>
-//     <tr>
-//     <th>{items.type}</th>
-//     <th>{items.amount}</th>
-//     <th>{items.currency}</th>
-//     </tr>
-//     <tr >
-//     <th>{items.type}</th>
-//     <th>{items.amount}</th>
-//     <th>{items.currency}</th>
-//     </tr>
-//     <tr>
-//     <th>{items.type}</th>
-//     <th>{items.amount}</th>
-//     <th>{items.currency}</th>
-//     </tr>
-//     <tr>
-//     <th>{items.type}</th>
-//     <th>{items.amount}</th>
-//     <th>{items.currency}</th>
-//     </tr>
-//     <tr>
-//     <th>{items.type}</th>
-//     <th>{items.amount}</th>
-//     <th>{items.currency}</th>
-//     </tr>
-//   </tbody>
-// </table>
-// </div>
-// )  
-// };
-// export default TransactionHistory;
-// TransactionHistory.propTypes = {
-//     items:PropTypes.arrayOf(PropTypes.shape({id:PropTypes.string.isRequired, type:PropTypes.string.isRequired, amount:PropTypes.string.isRequired, currency:PropTypes.string.isRequired}))
-// }
+import styles from './bankservices.module.css';
+import PropTypes from "prop-types";
+const TransactionHistory = ({items}) =>  {
+    return (
+<div>
+<table className= {styles['transaction-history']}>
+  <thead>
+    <tr>
+    <th>Type</th>
+    <th>Amount</th>
+    <th>Currency</th>
+    </tr>
+  </thead>
+  {items.map(item => (<tbody>
+    <tr>
+    <th>{item.type}</th>
+    <th>{item.amount}</th>
+    <th>{item.currency}</th>
+    </tr>
+    <tr >
+    <th>{item.type}</th>
+    <th>{item.amount}</th>
+    <th>{item.currency}</th>
+    </tr>
+  
+  </tbody>))}
+</table>
+</div>
+)  
+};
+export default TransactionHistory;
+TransactionHistory.propTypes = {
+    items:PropTypes.arrayOf(PropTypes.shape({id:PropTypes.string.isRequired, type:PropTypes.string.isRequired, amount:PropTypes.string.isRequired, currency:PropTypes.string.isRequired}))
+}
 
 
