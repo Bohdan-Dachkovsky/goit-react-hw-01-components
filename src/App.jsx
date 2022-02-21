@@ -1,18 +1,15 @@
 // import { useReducer } from "react";
 import FriendList from "./components/FriendList/FriendList";
 
-import Profile from "./components/Profile";
+import Profile from "./components/Profile/Profile";
 import Statistics from "./components/Statistic/Statistic";
-import TransactionHistory from "./components/TransictionHistory/TransactionHistory";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 import user from "./data/user.json";
 import data from "./data/data.json";
-import friends from "./data/user.json";
-// import transactions from "./data/user.json";
-// import { number } from "prop-types";
+import friends from "./data/friends.json";
+import transactions from "./data/transactions.json";
 
 
-// import friend from ".data/friend.json";
-import transaction from ".data/transaction.json";
  const App = () => {
   return (
     <div
@@ -32,7 +29,7 @@ import transaction from ".data/transaction.json";
      {/*  Statistics({title: "Upload stats", stats: data}) */}
       <FriendList  friends={friends}/> 
    
-      <TransactionHistory items={transaction}  />
+      <TransactionHistory items={transactions}  />
     </div>
   );
 };
