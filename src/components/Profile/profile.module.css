@@ -73,6 +73,9 @@
     text-transform: lowercase;
     text-align: center;
     line-height: 1.16;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   
