@@ -5,7 +5,7 @@ const FriendListItem = ({isOnline, name, avatar}) =>  {
    return (
 <li className={styles.item}>
   <span className={styles.status}>{isOnline}</span>
-  <img  className={styles.photo} src={avatar} width="48" alt={name} />
+  <img  className={styles.photo} src={avatar} alt={name} />
   <p  style ={{marginTop: 51+"px"}}  className={styles.name}>{name}</p>
 </li>)
  

@@ -17,12 +17,6 @@ const TransactionHistory = ({items}) =>  {
     <th>{item.amount}</th>
     <th>{item.currency}</th>
     </tr>
-    <tr >
-    <th>{item.type}</th>
-    <th>{item.amount}</th>
-    <th>{item.currency}</th>
-    </tr>
-  
   </tbody>))}
 </table>
 </div>

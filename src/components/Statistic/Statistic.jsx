@@ -4,7 +4,7 @@ const Statistics = ({stats}) =>  {
     return (
 <div>
 <section className={styles.statistics}>
-  <ul className={styles['stat-list']}>
+  <ul className={styles.list}>
    { stats.map(element => (<li key= {element.id}   className={styles.item}>
       <span className={styles.label}>{element.label}</span>
       <span className={styles.percentage}>{element.percentage}%</span>

@@ -16,7 +16,17 @@ list-style: none;
 background-color: white;
 width: 600px;
 height: auto;
-margin-bottom: 50px
+margin-bottom: 100px;
+
+}
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 50px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
 }
 .status {
 margin: 0px;
@@ -25,6 +35,8 @@ list-style: inherit;
 };
 li > img {
 display: block;
+width: 50px;
+height: 50px;
 list-style: unset;
 };
 
@@ -36,14 +48,14 @@ li > p {
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-end: 30px;
 }
 .name {
 display: flex;
 align-items: center;
-margin: 0px;
+font-size: xx-large;
+font-weight: bold;
+margin-left: 200px ;
 display: block;
-text-align: center;
-
 
 };
