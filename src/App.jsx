@@ -21,7 +21,11 @@ import transactions from "./data/transactions.json";
       }}
     >
      <Profile user={user.username} tag={user.tag} location={user.location} avatar={user.avatar} stats={user.stats}/>
-     <Statistics  stats={data} />
+     <Statistics title="Statistics"  stats={data} />
+     
+      <Statistics  stats={data} />
+    
+
      {/*  Statistics({title: "Upload stats", stats: data}) */}
       <FriendList  friends={friends}/> 
    
