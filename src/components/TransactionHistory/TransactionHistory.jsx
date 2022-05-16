@@ -4,7 +4,7 @@ const TransactionHistory = ({ items }) => {
   return (
     <div>
       <table className={styles['transaction-history']}>
-        <thead>
+        <thead className={styles.indexes}>
           <tr>
             <th>Type</th>
             <th>Amount</th>

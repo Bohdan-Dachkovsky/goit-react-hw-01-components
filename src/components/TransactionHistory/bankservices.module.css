@@ -17,11 +17,13 @@
 .transaction-history tr:hover {
   background-color: #ddd;
 }
-
+.transaction-history .indexes th {
+  color: black;
+}
 .transaction-history th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #04aa6d;
-  color: white;
+  background-color: rgba(83, 129, 255, 0.8);
+  color: rgb(226, 250, 86);
 }

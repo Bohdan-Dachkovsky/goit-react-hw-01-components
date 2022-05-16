@@ -44,7 +44,7 @@ div:nth-child(1) {
 
 .avatar {
   clip-path: circle(35% at 50% 35%);
-  background-color: rgb(135, 170, 156);
+  background-color: rgba(30, 255, 75, 0.5);
 }
 .stats {
   margin: 0;
