@@ -17,7 +17,7 @@
 .transaction-history tr:hover {
   background-color: #ddd;
 }
-.transaction-history .indexes th {
+.transaction-history .indexes th  {
   color: black;
 }
 .transaction-history th {
