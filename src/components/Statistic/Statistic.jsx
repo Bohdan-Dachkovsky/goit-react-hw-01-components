@@ -1,7 +1,7 @@
 import styles from './section.module.css';
 import PropTypes from 'prop-types';
 
-const Statistics = ({ stats, title }) => {
+const Statistics = ({ title, stats }) => {
   return (
     <div>
       <section className={styles.statistics}>
@@ -9,7 +9,7 @@ const Statistics = ({ stats, title }) => {
 
         <ul className={styles.list}>
           {stats.map(element => (
-            <li key={element.id} className={styles.item}>
+            <li className={styles.item}>
               <span className={styles.label}>{element.label}</span>
               <span className={styles.percentage}>{element.percentage}%</span>
             </li>
@@ -20,6 +20,9 @@ const Statistics = ({ stats, title }) => {
   );
 };
 export default Statistics;
+Statistics.defaultProps = {
+  title: [],
+};
 Statistics.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
@@ -28,5 +31,4 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ),
-  title: PropTypes.string.isRequired,
 };
