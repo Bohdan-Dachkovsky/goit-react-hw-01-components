@@ -21,7 +21,7 @@ const Statistics = ({ title, stats }) => {
 };
 export default Statistics;
 Statistics.defaultProps = {
-  title: '',
+  title: 'Statistics',
 };
 Statistics.propTypes = {
   title: PropTypes.string.isRequired,
