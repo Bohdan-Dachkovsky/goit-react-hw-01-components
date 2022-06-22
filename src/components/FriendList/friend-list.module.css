@@ -37,6 +37,7 @@ ul {
   background-color: greenyellow;
   list-style: inherit;
 }
+
 .status-active {
   width: 100px;
   height: 0px;
@@ -54,6 +55,12 @@ ul {
   padding: 0px;
   background-color: red;
   list-style: inherit;
+}
+span:hover > .statusOff {
+  background-color: greenyellow;
+}
+.statusOff:hover {
+  background-color: greenyellow;
 }
 li > img {
   display: block;
