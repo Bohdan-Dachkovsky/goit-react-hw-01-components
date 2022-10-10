@@ -5,24 +5,24 @@ function Profile({ user, tag, location, avatar, stats }) {
   return (
     <div>
       <div className={styles.profile}>
-        <div className={styles.description}>
-          <img src={avatar} alt="User avatar" className={styles.avatar} />
-          <p className={styles.name}>{user}</p>
-          <p className={styles.tag}>{tag}</p>
-          <p className={styles.location}>{location}</p>
+        <div className={styles.profileName}>
+          <img src={avatar} alt="User avatar" className={styles.avatarPerson} />
+          <p className={styles.profileName}>{user}</p>
+          <p className={styles.profileTag}>{tag}</p>
+          <p className={styles.profileLocation}>{location}</p>
         </div>
-        <ul className={styles.stats}>
+        <ul className={styles.statsBox}>
           <li>
-            <span className={styles.label}>Followers</span>
-            <span className={styles.quantity}>{stats.followers}</span>
+            <span>Followers</span>
+            <span>{stats.followers}</span>
           </li>
           <li>
-            <span className={styles.label}>Views</span>
-            <span className={styles.quantity}>{stats.views}</span>
+            <span>Views</span>
+            <span>{stats.views}</span>
           </li>
           <li>
-            <span className={styles.label}>Likes</span>
-            <span className={styles.quantity}>{stats.likes}</span>
+            <span>Likes</span>
+            <span>{stats.likes}</span>
           </li>
         </ul>
       </div>

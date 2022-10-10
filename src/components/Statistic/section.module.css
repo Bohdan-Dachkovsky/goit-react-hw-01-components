@@ -1,5 +1,11 @@
 /* @import-normalize; bring in normalize.css styles */
-.list {
+.subtitleHeaders {
+  border: 1px solid black;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.statisticslist {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
@@ -9,12 +15,15 @@
   border-top: 0px;
   border-radius: 0px;
   margin: 0px;
-  margin-bottom: 50px;
 }
-.list:nth-child(1) {
+.statisticslist:nth-child(2n) {
+  border-bottom: 1px solid;
+  border-bottom: 0px;
+}
+.statisticslist:nth-child(1) {
   border-top: 1px solid black;
 }
-.item {
+.statisticsItem {
   margin: 0px;
   padding: 0px;
   background-color: rgb(226, 250, 86);
@@ -24,12 +33,6 @@
   margin-inline-end: 0px;
   border: 1px solid;
 }
-.item:nth-last-child(2n-1) {
+.statisticsItem:nth-last-child(2n-1) {
   background-color: rgba(63, 113, 252, 0.8);
-}
-.subtitle {
-  border: 1px solid black;
-
-  margin-bottom: 0px;
-  text-align: center;
 }

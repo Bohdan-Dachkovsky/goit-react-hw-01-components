@@ -1,26 +1,26 @@
-.transaction-history {
+.transactionHistory {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-.transaction-history td,
-.transaction-history th {
+.transactionHistory td,
+.transactionHistory th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-.transaction-history tr:nth-child(even) {
+.transactionHistory tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-.transaction-history tr:hover {
+.transactionHistory tr:hover {
   background-color: #ddd;
 }
-.transaction-history .indexes th  {
+.transactionHistory .transactionsObj th {
   color: black;
 }
-.transaction-history th {
+.transactionHistory th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;

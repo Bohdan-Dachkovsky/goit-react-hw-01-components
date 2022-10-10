@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 const Statistics = ({ title, stats }) => {
   return (
     <div>
-      <section className={styles.statistics}>
-        {title && <h2 className={styles.subtitle}>{title}</h2>}
+      <section className={styles.statisticsBlock}>
+        {title && <h2 className={styles.subtitleHeaders}>{title}</h2>}
 
-        <ul className={styles.list}>
+        <ul className={styles.statisticslist}>
           {stats.map(element => (
-            <li className={styles.item}>
-              <span className={styles.label}>{element.label}</span>
-              <span className={styles.percentage}>{element.percentage}%</span>
+            <li className={styles.statisticsItem}>
+              <span>{element.label}</span>
+              <span>{element.percentage}%</span>
             </li>
           ))}
         </ul>
@@ -27,6 +27,7 @@ Statistics.propTypes = {
     PropTypes.shape({
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
     })
   ),
 };

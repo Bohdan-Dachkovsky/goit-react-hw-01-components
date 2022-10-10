@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 const TransactionHistory = ({ items }) => {
   return (
     <div>
-      <table className={styles['transaction-history']}>
-        <thead className={styles.indexes}>
+      <table className={styles.transactionHistory}>
+        <thead className={styles.transactionsObj}>
           <tr>
             <th>Type</th>
             <th>Amount</th>
