@@ -1,6 +1,6 @@
 // import { useReducer } from "react";
 import FriendList from './components/FriendList/FriendList';
-
+import FormChecked from './components/FormChecked/Form.jsx';
 import Profile from './components/Profile/Profile';
 import Statistics from './components/Statistic/Statistic';
 import TransactionHistory from './components/TransactionHistory/TransactionHistory';
@@ -26,6 +26,8 @@ const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
+      <FormChecked nameT={"Введіть ваше ім'я"} />
+
       <Statistics title="Statistics" stats={data} />
 
       <Statistics stats={data} />
