@@ -1,13 +1,13 @@
 import { useState } from 'react';
-const INITIAL_STATE = {
-  login: '',
-  email: '',
-  password: '',
-  agreed: false,
-};
+import PropTypes from 'prop-types';
 
-const FormChecked = props => {
-  const [state, setState] = useState(...INITIAL_STATE);
+const FormChecked = ({ nameProfile }) => {
+  const [state, setState] = useState({
+    login: '',
+    email: '',
+    password: '',
+    agreed: false,
+  });
   const handleChange = evt => {
     const { name, value, type, checked } = evt.target;
     setState({ [name]: type === 'checkbox' ? checked : value });
@@ -24,11 +24,11 @@ const FormChecked = props => {
     /* ... */
   };
 
-  const { login, agreed } = this.state;
+  const { login, agreed } = state;
 
   return (
     <div>
-      {props}
+      {nameProfile}
       <form onSubmit={handleSubmit}>
         <label>
           <input
@@ -53,3 +53,6 @@ const FormChecked = props => {
   );
 };
 export default FormChecked;
+FormChecked.propTypes = {
+  nameProfile: PropTypes.string.isRequired,
+};

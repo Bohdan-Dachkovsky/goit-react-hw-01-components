@@ -26,7 +26,7 @@ const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <FormChecked nameT={"Введіть ваше ім'я"} />
+      <FormChecked nameProfile={"Введіть ваше ім'я"} />
 
       <Statistics title="Statistics" stats={data} />
 
